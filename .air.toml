@@ -1,0 +1,7 @@
+
+[build]
+cmd = "go build -o ./tmp/main.exe main.go"  # คำสั่งที่ใช้รันแอพพลิเคชัน
+
+[watch]
+include = ["*.go", "*.json"]    # ติดตามการเปลี่ยนแปลงในไฟล์ .go และ .json
+exclude = ["*.tmp"]    # ละเว้นไฟล์ที่มีนามสกุล .tmp

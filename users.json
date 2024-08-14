@@ -1,0 +1,26 @@
+[
+  {
+    "userId": 1,
+    "username": "user",
+    "password": "user",
+    "role": "user"
+  },
+  {
+    "userId": 2,
+    "username": "admin",
+    "password": "admin",
+    "role": "admin"
+  },
+  {
+    "userId": 3,
+    "username": "superuser",
+    "password": "superuser",
+    "role": "superuser"
+  },
+  {
+    "userId": 4,
+    "username": "dn",
+    "password": "donut11",
+    "role": "admin"
+  }
+]
