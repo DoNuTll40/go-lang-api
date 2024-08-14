@@ -1,5 +1,7 @@
-
 ## Golang API + ChatGPT
-คำสั่งรัน `bash
-air
-`
+คำสั่งรันโปรเจค
+```bash
+$ air
+```
+
+PORT ที่ใช้งาน คือ 8080
