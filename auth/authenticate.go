@@ -22,17 +22,12 @@ func AuthenticateToken(c *gin.Context) {
 	// ดึงค่า Authorization header จาก request
 	jwtToken := c.GetHeader("Authorization")
 
-	// พิมพ์ค่า Authorization header ลงใน console (ใช้ fmt.Println เพื่อแสดงใน log ของ server)
-	fmt.Println("Authorization Header:", jwtToken)
-
 	if !strings.HasPrefix(jwtToken, "Bearer ") {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Authorization not bearer"})
 		return
 	}
 
 	tokenString := strings.TrimSpace(strings.TrimPrefix(jwtToken, "Bearer "))
-
-	fmt.Println("Authorization Bearer:", tokenString)
 
 	// ตรวจสอบว่ามีค่า Authorization header หรือไม่
 	if tokenString == "" {
